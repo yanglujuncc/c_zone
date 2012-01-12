@@ -1,0 +1,28 @@
+
+CXX=gcc
+
+CXXFLAGS=-O2 -Wall
+
+MASTER_SERVER_SRC_DIR=src
+MASTER_SERVER_SRC_IDIR=src
+MASTER_SERVER_OBJ=master_server.o 
+
+MASTER_CLIENT_OBJ=master_client.o 
+
+
+WORKER_SERVER_SRC_DIR=src
+WORKER_SERVER_SRC_IDIR=src
+WORKER_SERVER_OBJ=worker_server.o
+
+WORKER_CLIENT_OBJ=worker_client.o
+
+
+
+master_server:$(MASTER_SERVER_OBJ)
+	$(CXX) $(CXXFLAGS) -o master_server $(MASTER_SERVER_OBJ) -I$(MASTER_SERVER_SRC_IDIR) 
+
+worker_server:$(WORKER_SERVER_OBJ)
+	$(CXX) $(CXXFLAGS) -o worker_server $(WORKER_SERVER_OBJ) -I$(WORKER_SERVER_SRC_IDIR)
+
+
+

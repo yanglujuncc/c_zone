@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/cslib_svn/!svn/ver/2/cs_lib/include
+END
+services_list.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/cslib_svn/!svn/ver/2/cs_lib/include/services_list.h
+END
+worker_client.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/cslib_svn/!svn/ver/2/cs_lib/include/worker_client.h
+END
